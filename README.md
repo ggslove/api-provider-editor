@@ -3,7 +3,7 @@
 ## vscode 参数配置
 
 ```javascript
-	{
+{
   // 使用 IntelliSense 了解相关属性。 
   // 悬停以查看现有属性的描述。
   // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
