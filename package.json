@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "pm2 start pm2.dev.config.json && pm2 logs",
+    "deploy": "pm2 start pm2.prod.config.json",
+    "migrate": "pm2 start migrations/index.ts && pm2 logs",
+    "del": "pm2 delete all"
   },
   "author": "",
   "license": "ISC",
@@ -25,11 +28,12 @@
     "typeorm": "^0.2.18"
   },
   "devDependencies": {
-    "@types/koa-router": "^7.0.42",
     "@types/joi": "^14.3.3",
     "@types/koa": "^2.0.49",
+    "@types/koa-router": "^7.0.42",
     "@types/lodash": "^4.14.136",
     "eslint": "^6.1.0",
+    "pm2": "^3.5.1",
     "typescript": "^3.5.3"
   }
 }

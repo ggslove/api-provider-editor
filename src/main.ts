@@ -1,5 +1,5 @@
 import Koa from 'koa';
-import db from './src/database/db.connection';
+import db from './database/db.connection';
 import initRouter from '@zhili/server-util/src/init/initRouter';
 const app = new Koa();
 
