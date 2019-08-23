@@ -13,3 +13,8 @@ db.then(() => {
 
 
 
+
+
+sudo EXTERNAL_URL="http://gitlab.zhili-tech.com" yum install -y gitlab-ee
+
+
