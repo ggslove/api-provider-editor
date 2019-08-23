@@ -18,6 +18,7 @@ router.post("/", async ctx => {
   ctx.status=HttpStatus.CREATED;//创建
 })
 
+//测试连接
 router.post("/test",async ctx=>{
   const testResult=await ApiConnectDao.test(ctx.request.body as ApiConnect);
   ctx.body=testResult;
@@ -38,7 +39,6 @@ router.get("/:id",async ctx=>{
 //删除
 router.delete("/:ids",async ctx=>{
   //ctx.body=ApiConfigDao.findByConnectId
-  
 })
 
 //获取所有配置

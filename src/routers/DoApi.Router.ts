@@ -8,11 +8,13 @@ const routerOpts: Router.IRouterOptions = {
 const router: Router = new Router(routerOpts);
 
 router.post("/ES/",async(ctx)=>{
-  ctx.body="doApi-get-es"
+  ctx.body="doApi-get-es";
+  ctx.status=HttpStatus.OK;
 })
 
 router.post("/DB/",async(ctx)=>{
-  ctx.body="doApi-get-db"
+  ctx.body="doApi-get-db";
+  ctx.status=HttpStatus.OK;
 })
 
 export default router;
