@@ -14,7 +14,7 @@ export function controller(path?: string): ClassDecorator {
     if (parent[TAG_CONTROLLER]) {
       path = parent[TAG_CONTROLLER] + path;
     }
-    Object.defineProperty(Controller,TAG_CONTROLLER,{value:path});
+    Object.defineProperty(Controller,TAG_CONTROLLER,{valuµ e:path});
    // Controller[TAG_CONTROLLER] = path;
   }
 }
